@@ -1,0 +1,78 @@
+.containerBox {
+  display: flex;
+  width: calc(100% - 140px);
+  height: fit-content;
+  margin: 30px auto;
+  color: #ffff;
+  flex-direction: column;
+}
+.mainBox {
+  width: calc(100% - 140px);
+  display: flex;
+  justify-content: space-between;
+  margin: 10px auto;
+}
+.shippingBox {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.formBox {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0;
+  border: solid 1px var(--yellow);
+}
+.inputBox {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 5px 0;
+  padding: 0 20px;
+}
+.inputBox label {
+  margin-bottom: 5px;
+}
+.inputBox input {
+  height: 35px;
+}
+.button {
+  margin: 10px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 400;
+}
+.productsBox {
+  width: 100%;
+  display: flex;
+}
+.listBox {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  flex-direction: column;
+}
+.productsList {
+  margin: 15px 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+.item {
+  border-bottom: solid 1px var(--yellow);
+  margin: 5px, 0;
+  padding-top: 10px;
+}
+.totalPrice {
+  margin: 15px 0;
+}
+@media (max-width: 900px) {
+  .mainBox {
+    flex-wrap: wrap;
+  }
+}

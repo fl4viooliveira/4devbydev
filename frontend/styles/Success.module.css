@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 140px);
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  color: #ffff;
+}
+.container h1 {
+  margin: 15px 0;
+}
+.container a {
+  margin: 15px 0;
+  color: #ffff;
+  font-size: 25px;
+}

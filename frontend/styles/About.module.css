@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 140px);
+  height: fit-content;
+  margin: 30px auto;
+  color: #ffff;
+}
+.container h1 {
+  margin: 10px auto 10px auto;
+}
+.textBox {
+  line-height: 1;
+}
+.textBox ul li {
+  margin-left: 20px;
+  padding: 20px;
+  font-size: 20px;
+  text-align: justify;
+}
+.textBox p {
+  margin: 5px 0;
+  font-size: 1.5em;
+  font-weight: 200;
+}
+.textBox h2 {
+  margin: 25px 0 10px 0;
+}
+.textBox h3 {
+  margin: 25px 0;
+}

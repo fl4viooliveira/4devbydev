@@ -1,0 +1,62 @@
+.container {
+  display: flex;
+  width: calc(100% - 140px);
+  border: 1px solid var(--yellow);
+  margin: 30px auto 0 auto;
+  border-radius: 30px;
+  overflow: hidden;
+}
+.imgBox {
+  background-color: var(--light-yellow);
+  flex: 1;
+  border-radius: 0 200px 0 200px;
+  display: flex;
+  justify-content: center;
+  object-fit: scale-down;
+  max-height: 300px;
+}
+.imgBox img {
+  width: 100%;
+  min-width: 300px;
+  object-fit: scale-down;
+}
+.infoBox {
+  flex: 1;
+  margin: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 300px;
+}
+.infoBox h2 {
+  color: #ffff;
+  font-size: calc(0.5rem + 1vw);
+  padding: 1em;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.infoBox button {
+  background-color: var(--yellow);
+  margin: auto;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  color: var(--blue);
+  font-size: calc(0.5rem + 1vw);
+  font-weight: 700;
+}
+
+@media (max-width: 900px) {
+  .container {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 400px) {
+  .container {
+    width: calc(100% - 20px);
+    margin: 10px auto;
+  }
+}

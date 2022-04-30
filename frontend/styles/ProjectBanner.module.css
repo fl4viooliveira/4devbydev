@@ -1,0 +1,112 @@
+.container {
+  display: flex;
+  width: calc(100% - 140px);
+  /* height: 248px; */
+  height: fit-content;
+  margin: 30px auto;
+  align-items: center;
+}
+.projectBox {
+  color: #ffff;
+  flex: 1;
+  margin-right: 5px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0 124px 0 124px;
+  justify-content: space-between;
+  min-width: 300px;
+  background: rgba(0, 0, 0, 0.05);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.projectBox h2 {
+  color: var(--light-yellow);
+  font-size: calc(0.6rem + 1.5vw);
+  font-weight: 700;
+  margin: 20px 5px 10px 50px;
+}
+.projectBox p {
+  font-size: calc(0.03rem + 1vw);
+  margin: 0 25px 10px 50px;
+  padding-right: 10px;
+}
+.buttonLine {
+  margin: 10px 10px 0 50px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+.buttonLine button {
+  background-color: var(--yellow);
+  border: none;
+  margin-right: 20px;
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  font-size: calc(0.5rem + 1vw);
+  font-weight: 700;
+  color: var(--blue);
+  border-radius: 8px;
+  cursor: pointer;
+}
+.buttonLine button img {
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+}
+.helpBox {
+  color: #ffff;
+  flex: 1;
+  margin-left: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid var(--yellow);
+  border-radius: 20px;
+  min-width: 300px;
+  padding: 10px;
+}
+.helpBox h2 {
+  font-size: calc(0.7rem + 1vw);
+}
+.helpItems {
+  list-style: none;
+  margin-top: 10px;
+}
+.helpItems li {
+  margin: 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.helpItems li img {
+  margin-right: 30px;
+}
+@media (max-width: 900px) {
+  .container {
+    flex-wrap: wrap;
+  }
+  .projectBox h2 {
+  }
+  .projectBox p {
+    font-size: 12px;
+  }
+  .buttonLine {
+    flex-direction: column;
+    padding: 0 30px;
+  }
+  .buttonLine button {
+    margin-bottom: 15px;
+    justify-content: center;
+  }
+  .helpBox {
+    margin-top: 25px;
+  }
+}
+@media (max-width: 400px) {
+  .container {
+    width: calc(100% - 20px);
+    margin: 10px auto;
+  }
+}

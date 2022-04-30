@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: calc(100% - 140px);
+  background: rgba(255, 255, 255, 0.1);
+  margin: 10px auto;
+  justify-content: center;
+}
+.img {
+  margin: 10px 0;
+}
+@media (max-width: 400px) {
+  .container {
+    width: calc(100% - 20px);
+    margin: 0 auto;
+  }
+}

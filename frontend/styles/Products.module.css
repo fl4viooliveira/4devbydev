@@ -1,0 +1,115 @@
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+}
+.containerBox {
+  width: calc(100% - 140px);
+  margin: 10px auto;
+  border: 1px solid var(--yellow);
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+.imageBox {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+  justify-content: center;
+  max-width: 50%;
+}
+.productImg {
+  flex-grow: 50%;
+}
+.infoBox {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 20px;
+  color: #ffff;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  font-size: calc(0.5rem + 1vw);
+  width: 100%;
+}
+.productOptions {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.productOptions label {
+  font-size: calc(0.7rem + 1vw);
+  margin: 15px 0;
+}
+.productOptions select {
+  font-size: calc(0.7rem + 1vw);
+  width: 90%;
+}
+.bottomLine {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.bottomLine h1 {
+  margin-right: 20px;
+  font-size: calc(1rem + 1vw);
+  margin-bottom: 20px;
+}
+.bottomLine h2 {
+  margin-bottom: 15px;
+  font-size: calc(0.6rem + 1vw);
+}
+.bottomLine h2 input {
+  margin-left: 10px;
+  text-align: center;
+  font-size: calc(0.8rem + 1vw);
+  font-weight: 700;
+  width: 50px;
+  height: 30px;
+}
+.bottomLine button {
+  background-color: var(--yellow);
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  font-size: calc(0.7rem + 1vw);
+  font-weight: 500;
+  color: var(--blue);
+  min-width: 200px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+@media (max-width: 900px) {
+  .containerBox {
+    flex-wrap: wrap;
+  }
+  .imageBox {
+    /* flex-grow: unset; */
+    /* margin: 0 auto; */
+    max-width: 100%;
+    justify-content: center;
+  }
+  .infoBox {
+    padding: 5px;
+    justify-content: center;
+  }
+  .infoBox h1 {
+    margin: 20px 0;
+  }
+  .bottomLine {
+    flex-direction: column;
+  }
+  .bottomLine button {
+    margin-bottom: 10px;
+    padding: 10px 15px;
+  }
+}
+@media (max-width: 465px) {
+  .container {
+    margin: 10px auto;
+  }
+  .containerBox {
+    width: calc(100% - 20px);
+    margin: 10px auto;
+  }
+}
