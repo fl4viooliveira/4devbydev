@@ -9,9 +9,8 @@ export default function Banner() {
       </div>
       <div className={styles.infoBox}>
         <h2>
-          This project intends to be an appliable commercially e-commerce web
-          application with a functional deployed website direct from our
-          OpenSource repository.
+          This project intends to be an appliable e-commerce application with a
+          functional deployed website direct from our OpenSource repository.
         </h2>
         <Link href="/about">
           <button>View more</button>
