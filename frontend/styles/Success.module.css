@@ -9,9 +9,19 @@
 }
 .container h1 {
   margin: 15px 0;
+  text-align: center;
 }
 .container a {
   margin: 15px 0;
   color: #ffff;
   font-size: 25px;
+}
+@media (max-width: 500px) {
+  .container {
+    width: calc(100% - 20px);
+    margin: 10px auto;
+  }
+  .container h1 {
+    font-size: 20px;
+  }
 }
