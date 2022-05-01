@@ -53,8 +53,11 @@
   .container {
     flex-wrap: wrap;
   }
+  .infoBox {
+    min-width: 200px;
+  }
 }
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .container {
     width: calc(100% - 20px);
     margin: 10px auto;
