@@ -1,8 +1,8 @@
 .containerBox {
   display: flex;
-  width: calc(100% - 140px);
+  /* width: calc(100% - 140px); */
   height: fit-content;
-  margin: 30px auto;
+  margin: 0px auto;
   color: #ffff;
   flex-direction: column;
 }
@@ -72,7 +72,16 @@
   margin: 15px 0;
 }
 @media (max-width: 900px) {
+  .containerBox {
+    width: calc(100% - 20px);
+  }
   .mainBox {
     flex-wrap: wrap;
+  }
+}
+@media (max-width: 500px) {
+  .mainBox {
+    width: calc(100% - 20px);
+    margin: 10px auto;
   }
 }

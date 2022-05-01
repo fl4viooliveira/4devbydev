@@ -77,6 +77,9 @@
   display: none;
 }
 @media (max-width: 900px) {
+  .logo {
+    width: 100px;
+  }
   .navbar {
     position: relative;
   }
@@ -124,7 +127,7 @@
     visibility: visible;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .navBar {
     width: calc(100% - 20px);
     margin: 10px auto;
