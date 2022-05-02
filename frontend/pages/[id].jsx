@@ -5,6 +5,7 @@ import React, { useState } from "react";
 import { addProduct } from "../redux/cartRedux";
 import { useDispatch } from "react-redux";
 import { useSelector } from "react-redux";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Products(item) {
@@ -76,8 +77,21 @@ export default function Products(item) {
           <div className={styles.bottomLine}>
             <h1>£{syncVariant[0].retail_price}</h1>
             <button onClick={handleClick} type="submit">
-              Add to Cart - {items > 0 ? `${items} item/s` : 0 + " item/s"}
+              {/* Add to Cart - {items > 0 ? `${items} item/s` : 0 + " item/s"} */}
+              Add to Cart
             </button>
+            <Link href="/cart">
+              <div>
+                {items ? (
+                  <div className={styles.cartLink}>
+                    <i>
+                      <Image src="/icons/cart.svg" width={30} height={30} />
+                    </i>
+                    <h2>{`${items} item/s`}</h2>
+                  </div>
+                ) : null}
+              </div>
+            </Link>
           </div>
         </div>
       </div>
