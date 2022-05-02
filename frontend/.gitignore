@@ -31,4 +31,4 @@ yarn-error.log*
 # vercel
 .vercel
 /.vscode
-
+/.DS_Store
