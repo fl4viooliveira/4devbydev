@@ -14,7 +14,7 @@
 
 ### About this Project:
 
-It is an E-commerce application built using Next.js, Node.js and MongoDB. It consumes the Printful API and uses Stripe as a payment system.
+It is an E-commerce application built using Next.js, and MongoDB. It consumes the Printful API and uses Stripe as a payment system.
 
 The application consumes print-on-demand API by <a href='https://www.printful.com/'>Printful</a> and can be helpful as a tool for freelancers or a print-on-demand startup business.  
 Feel free to use it wherever you want. I'll be happy if you provide any feedback or suggestions.
@@ -30,7 +30,8 @@ The Printful API is a RESTful API, that uses an HTTP protocol for communication.
 <a href='https://developers.printful.com/docs/'>API Documentation | Printful (1.0)</a>
 
 <hr class="dotted">
-
+git fetch origin
+git checkout next-fullstack
 ### Getting Started with Printful
 
 - Visit <a href='https://www.printful.com/'>printful.com</a> and create an account.
@@ -58,29 +59,16 @@ $ git clone https://github.com/fl4viooliveira/4devbydev.git
 $ cd 4devbydev
 ```
 
-On backend folder create a <b>.env</b> file and install.
+On root folder create a <b>.env.local</b> file and install.
 
 ```
 STRIPE_KEY =
 FRONTEND_APP_URL=
 PRINTIFUL_KEY=
-NODE_ENV = "development"
-```
-
-Install and run:
-
-```
-$ npm install
-$ npm start
-```
-
-On frontend folder create a <b>.env.local</b> file and install.
-
-```
 PRINTFUL_PRODUCTS="https://api.printful.com/store/products"
 PRINTIFUL_KEY=
 NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=
-NEXT_PUBLIC_BASE_URL = "http://localhost:5050/api/"
+NEXT_PUBLIC_BASE_URL =
 NEXT_PUBLIC_DEVELOPMENT = true
 ```
 
