@@ -5,9 +5,9 @@ import StripeCheckout from "react-stripe-checkout";
 import { useSelector, useDispatch } from "react-redux";
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
-import { userRequest } from "../requestMethods";
 import { setInvoice } from "../redux/orderRedux";
 import { cleanCart } from "../redux/cartRedux";
+import axios from "axios";
 
 const KEY = process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY;
 
@@ -65,15 +65,14 @@ export default function Checkout() {
   useEffect(() => {
     const makeRequest = async () => {
       try {
-        const res = await userRequest.post("/printful/order", {
+        const res = await axios.post("api/printful/order", {
           order: order,
         });
         const orderIdNum = res.data.result;
         const orderId = orderIdNum.id;
         const storeId = orderIdNum.store;
 
-        // const payRes = await userRequest.post("/checkout/payment", {
-        const payRes = await userRequest.post("/payment", {
+        const payRes = await axios.post("api/payment", {
           tokenId: stripeToken.id,
           amount: cart.total * 100,
         });
@@ -81,11 +80,13 @@ export default function Checkout() {
 
         if (paid === true) {
           dispatch(setInvoice(payRes.data.receipt_url));
-          const orderRes = await userRequest.post("/printful/confirm", {
+          const orderRes = await axios.post("api/printful/confirm", {
             id: orderId,
             store: storeId,
           });
           router.push("/success", { data: orderRes.data });
+        } else {
+          router.push("/error");
         }
       } catch (err) {
         console.log(err);
