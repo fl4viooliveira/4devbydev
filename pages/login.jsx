@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { login } from "../redux/apiCalls";
+// import { login } from "../redux/apiCalls"; //TODO: refactor to use useDispatch
 import { useDispatch, useSelector } from "react-redux";
 import Link from "next/link";
 import Navbar from "../components/Navbar";
