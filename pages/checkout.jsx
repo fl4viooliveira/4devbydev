@@ -72,7 +72,8 @@ export default function Checkout() {
         const orderId = orderIdNum.id;
         const storeId = orderIdNum.store;
 
-        const payRes = await userRequest.post("/checkout/payment", {
+        // const payRes = await userRequest.post("/checkout/payment", {
+        const payRes = await userRequest.post("/payment", {
           tokenId: stripeToken.id,
           amount: cart.total * 100,
         });
