@@ -71,12 +71,15 @@ export default function Checkout() {
         const orderIdNum = res.data.result;
         const orderId = orderIdNum.id;
         const storeId = orderIdNum.store;
+        console.log(res.data);
 
-        const payRes = await userRequest.post("/checkout/payment", {
+        // const payRes = await userRequest.post("/checkout/payment", {
+        const payRes = await userRequest.post("/payment", {
           tokenId: stripeToken.id,
           amount: cart.total * 100,
         });
         const paid = payRes.data.paid;
+        console.log(payRes.data);
 
         if (paid === true) {
           dispatch(setInvoice(payRes.data.receipt_url));
@@ -84,6 +87,7 @@ export default function Checkout() {
             id: orderId,
             store: storeId,
           });
+          console.log(orderRes.data);
           router.push("/success", { data: orderRes.data });
         }
       } catch (err) {

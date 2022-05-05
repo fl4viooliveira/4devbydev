@@ -1,9 +1,9 @@
-const router = require("express").Router();
-require("dotenv").config();
-const KEY = process.env.STRIPE_KEY;
-const stripe = require("stripe")(KEY);
+import Stripe from "stripe";
 
-router.post("/payment", (req, res) => {
+const KEY = process.env.STRIPE_KEY;
+const stripe = Stripe(KEY);
+
+export default async function handler(req, res) {
   stripe.charges.create(
     {
       source: req.body.tokenId,
@@ -18,6 +18,4 @@ router.post("/payment", (req, res) => {
       }
     }
   );
-});
-
-module.exports = router;
+}
