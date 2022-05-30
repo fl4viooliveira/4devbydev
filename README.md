@@ -30,8 +30,7 @@ The Printful API is a RESTful API, that uses an HTTP protocol for communication.
 <a href='https://developers.printful.com/docs/'>API Documentation | Printful (1.0)</a>
 
 <hr class="dotted">
-git fetch origin
-git checkout next-fullstack
+
 ### Getting Started with Printful
 
 - Visit <a href='https://www.printful.com/'>printful.com</a> and create an account.
@@ -76,7 +75,7 @@ Install and run:
 
 ```
 $ npm install
-$ npm dev
+$ npm run dev
 ```
 
 <hr class="dotted">
