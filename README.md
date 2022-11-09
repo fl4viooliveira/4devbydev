@@ -1,6 +1,8 @@
+<!---
 <p align="center">
 <img  width="300" height="150" src="https://4devbydev.com/logo.svg" src="https://4devbydev.com"/>
 </p>
+-->
 
 <p align='center'>
 <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/fl4viooliveira/4devbydev?style=social">
