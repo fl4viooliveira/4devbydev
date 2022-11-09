@@ -115,9 +115,7 @@ To confirm that your integration works correctly, simulate transactions without 
 <p align='center'>
   <img alt="GitHub forks" src="https://img.shields.io/github/forks/fl4viooliveira/4devbydev?style=social">
   <img alt="GitHub stars" src="https://img.shields.io/github/stars/fl4viooliveira/4devbydev?style=social">
-  <img alt="GitHub watchers" src="https://img.shields.io/github/watchers/fl4viooliveira/4devbydev?style=social">
-  <img alt="GitHub created" src="https://badges.pufler.dev/created/fl4viooliveira/4devbydev">
-  <img alt="Repo Visits" src="https://badges.pufler.dev/visits/fl4viooliveira/4devbydev"> 
+  <img alt="GitHub watchers" src="https://img.shields.io/github/watchers/fl4viooliveira/4devbydev?style=social"> 
 </p>
 
 <p align='center'>
