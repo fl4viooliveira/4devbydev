@@ -23,6 +23,7 @@ export default function Checkout() {
     setStripeToken(token);
   };
 
+  const [one, setOne] = useState("");
   const [formName, setFormName] = useState("");
   const [formAddress, setFormAddress] = useState("");
   const [formCity, setFormCity] = useState("");
